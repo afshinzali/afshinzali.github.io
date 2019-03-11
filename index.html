@@ -67,8 +67,10 @@
         <br>
     </body>
     <script>
-        document.getElementById('password_form').addEventListener('submit', function() {
+        document.getElementById('password_form').addEventListener('submit', function(e) {
+            e.preventDefault();
             var password = document.getElementById('pass').value;
+            console.log(password);
            if (password ===  "portfolio") window.location.replace('https://google.com');
         });
     </script>
