@@ -39,7 +39,7 @@
         
         <h2>Afshin Zali</h2>
         
-        <form class="center">
+        <form class="center" id="password_form">
             <label for="pass">Password</label>
             <br>
             <input type="password" id="pass">
@@ -66,4 +66,10 @@
         <br>
         <br>
     </body>
+    <script>
+        document.getElementById('password_form').addEventListener('submit', function() {
+            var password = document.getElementById('pass').value;
+           if (password ===  "portfolio") window.location.replace('https://google.com');
+        });
+    </script>
 </html>
