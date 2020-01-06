@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteCond %{HTTP_HOST} ^(www\.)?coolexample\.com
-RewriteRule ^(.*)$ https://www.coolexample.com/$1 [R,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?afshinzali\.com
+RewriteRule ^(.*)$ https://www.afshinzali.com/$1 [R,L]
